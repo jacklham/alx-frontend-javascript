@@ -1,3 +1,8 @@
-import signUpUser from "./4-user-promise";
+function signUpUser(firstName, lastName) {
+  return Promise.resolve({
+    firstName,
+    lastName,
+  });
+}
 
-console.log(signUpUser("Bob", "Dylan"));
+export default signUpUser;
